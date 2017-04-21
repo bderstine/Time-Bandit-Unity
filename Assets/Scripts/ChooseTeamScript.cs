@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ChooseTeamScript : MonoBehaviour {
+	
 	public Text welcome_text;
 
 	// Use this for initialization
