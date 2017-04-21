@@ -7,10 +7,21 @@ using UnityEngine.SceneManagement;
 public class ChooseTeamScript : MonoBehaviour {
 	
 	public Text welcome_text;
+	public static string myTeam;
+
+	public void ChooseThief(int sceneIndex) {
+		myTeam = "Thief";
+		SceneManager.LoadScene (sceneIndex);
+	}
+
+	public void ChooseDetective(int sceneIndex) {
+		myTeam = "Detective";
+		SceneManager.LoadScene (sceneIndex);
+	}
 
 	// Use this for initialization
 	void Start () {
-		Debug.Log(MainMenu.myName);
+		//Debug.Log(MainMenu.myName);
 		welcome_text.text = "Welcome " + MainMenu.myName;
 	}
 	
