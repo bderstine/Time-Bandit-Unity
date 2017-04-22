@@ -11,8 +11,8 @@ public class HomeScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		myname_text.text = MainMenu.myName;
-		myteam_text.text = ChooseTeamScript.myTeam;
+		myname_text.text = "Name: " + MainMenu.myName;
+		myteam_text.text = "Team: " + ChooseTeamScript.myTeam;
 	}
 	
 	// Update is called once per frame
