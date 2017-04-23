@@ -6,17 +6,18 @@ using UnityEngine.SceneManagement;
 
 public class BriefcaseScript : MonoBehaviour {
 
-	public Text myname_text;
-	public Text myteam_text;
+	public void OpenScene (int sceneIndex) {
+		SceneManager.LoadScene (sceneIndex);
+	}
 
 	// Use this for initialization
 	void Start () {
-		myname_text.text = "Name: " + MainMenu.myName;
-		myteam_text.text = "Team: " + ChooseTeamScript.myTeam;
+		
 	}
 
 	// Update is called once per frame
 	void Update () {
 
 	}
+
 }

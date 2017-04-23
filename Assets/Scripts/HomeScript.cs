@@ -9,6 +9,14 @@ public class HomeScript : MonoBehaviour {
 	public Text myname_text;
 	public Text myteam_text;
 
+	public void OpenUrl (string url) {
+		Application.OpenURL (url);
+	}
+
+	public void OpenScene (int sceneIndex) {
+		SceneManager.LoadScene (sceneIndex);
+	}
+
 	// Use this for initialization
 	void Start () {
 		myname_text.text = "Name: " + MainMenu.myName;
@@ -19,4 +27,5 @@ public class HomeScript : MonoBehaviour {
 	void Update () {
 		
 	}
+
 }
