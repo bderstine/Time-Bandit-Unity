@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 0651caf4789e749e3b30ec5a7b9c32b0
+timeCreated: 1493127940
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Circular Std Book
+  fontNames:
+  - Circular Std Book
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
