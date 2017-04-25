@@ -19,6 +19,10 @@ public class ChooseTeamScript : MonoBehaviour {
 		SceneManager.LoadScene (sceneIndex);
 	}
 
+	public void LoadScene(int sceneIndex){
+		SceneManager.LoadScene (sceneIndex);
+	}
+
 	// Use this for initialization
 	void Start () {
 		//Debug.Log(MainMenu.myName);
