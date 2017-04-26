@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="vuforia_stones" size="50.000000 35.000000" />
-    <ImageTarget name="1950-134-59-pma" size="50.000000 82.089554" />
+    <ImageTarget name="M1928-1-41-pma" size="50.000000 37.766666" />
+    <ImageTarget name="Cat740-pma-CX" size="50.000000 76.297050" />
+    <ImageTarget name="1986-100-1-CX" size="50.000000 60.096153" />
+    <ImageTarget name="1952-61-72" size="50.000000 75.150299" />
+    <ImageTarget name="diana" size="50.000000 66.725975" />
   </Tracking>
 </QCARConfig>
