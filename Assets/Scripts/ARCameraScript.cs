@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ARCameraScript : MonoBehaviour {
+	public float TouchTime;
 
 	public void OpenScene (int sceneIndex) {
 		SceneManager.LoadScene (sceneIndex);
@@ -17,22 +18,21 @@ public class ARCameraScript : MonoBehaviour {
 	Vector3 touchPosWorld;
 	TouchPhase touchPhase = TouchPhase.Began;
 	void Update() {
-		//We check if we have more than one touch happening.
-		//We also check if the first touches phase is Ended (that the finger was lifted)
-		if (Input.touchCount > 0 && Input.GetTouch(0).phase == touchPhase) {
-			//We transform the touch position into word space from screen space and store it.
-			touchPosWorld = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
 
-			Vector2 touchPosWorld2D = new Vector2(touchPosWorld.x, touchPosWorld.y);
+		Touch touch = Input.touches [0];
 
-			//We now raycast with this information. If we have hit something we can process it.
-			RaycastHit2D hitInformation = Physics2D.Raycast(touchPosWorld2D, Camera.main.transform.forward);
+		if (touch.phase == TouchPhase.Began){
+			TouchTime = Time.time;
+		}
 
-			if (hitInformation.collider != null) {
-				//We should have hit something with a 2D Physics collider!
-				GameObject touchedObject = hitInformation.transform.gameObject;
-				//touchedObject should be the object someone touched.
-				Debug.Log("Touched " + touchedObject.transform.name);
+		if (touch.phase == TouchPhase.Ended || touch.phase == TouchPhase.Canceled){
+			if (Time.time - TouchTime <= 0.5){
+				// do stuff as a tap​
+				SceneManager.LoadScene (7);
+			}
+			else{
+				// this is a long press or drag​
+				SceneManager.LoadScene (16);
 			}
 		}
 	}
