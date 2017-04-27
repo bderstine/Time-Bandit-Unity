@@ -4,8 +4,7 @@ This repository contains all the required Unity 5.5 files to launch, build, and 
 
 ### What is this repository for? ###
 
-* Time Bandit is The MuseumCrawlers submission for the PMA Hackathon 2.0 submission. 
-* 0.2
+* Time Bandit is The MuseumCrawlers submission for the PMA Hackathon 2.0 submission. Version 0.2
 
 ### How do I get set up? ###
 
