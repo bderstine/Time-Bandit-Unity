@@ -6,7 +6,11 @@ This repository contains all the required Unity 5.5 files to launch, build, and 
 
 * Time Bandit is The MuseumCrawlers submission for the PMA Hackathon 2.0 submission. Version 0.2
 
-### How do I get set up? ###
+### Easiest way to try the app? ###
+* Android 4.4+ - Use the APK file found in the Downloads folder of the repo
+* iOS 8.0+ - Use xcode and the zip file from: https://www.dropbox.com/sh/zcdo884a59hgjzp/AABfi41WftVN8us03OJ2nCJEa?dl=0
+
+### How do I build the project? ###
 
 * Open Unity 5.5
 * Clone repo locally
